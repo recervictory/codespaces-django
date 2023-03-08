@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+    <ul>
+        {% for todo in todos %}
+            <li>{{ todo.title }} - {{ todo.description }} - {{ todo.completed }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
